@@ -1,0 +1,21 @@
+Exercice 1.
+
+1. Cela fonctionne car nous sommes dans la même classe donc les champs privés sont "visibles" au sein de la même classe.
+
+2. Cela ne fonctionne pas car le main tente d'accéder a des champs "private" qui sont extérieurs à sa classe et donc inconnu. Plusieurs solutions s'offrent à nous :
+	- Passer les champs en "public"
+	- Créer une méthode publique qui renvoie les variables "private"
+
+3. Les variables "private" servent notamment à protéger l'intégrité du programme face à d'autres développeurs par exemple. C'est aussi utile lorsque l'on a uniquement besoin d'un "getter" et non d'un "setter" ou vice versa.
+
+4. Un accesseur est une méthode qui va nous permettre d'accéder aux variables de nos objets en lecture. Typiquement, ce sont les méthodes getNomDeLaVariable(). Elles permettent d'utiliser des variables private dans d'autres classes. Ici, nous devons les utiliser si nous voulons utiliser les variables x et y dans la classe TestPoint.
+
+5.
+
+6.
+
+7. On peut placer un compteur dans le constructeur.
+
+8. La compilateur regarde parmi les constructeurs si un correspond avec le type passé en paramètre. Si oui il l'utilise, sinon il utilise le constructeur par défault.
+
+9. Fait.
