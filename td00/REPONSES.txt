@@ -1,1 +1,31 @@
-Test 1
+#################### TD00 ####################
+
+-- EXERCICE 1 --
+
+Fait.
+
+-- EXERCICE 2 --
+
+Fait.
+
+-- EXERCICE 3 --
+
+Fait.
+
+-- EXERCICE 4 --
+
+Fait.
+
+#################### TD00bis ####################
+
+-- EXERCICE 1 --
+
+Fait.
+
+-- EXERCICE 2 --
+
+Fait.
+
+-- EXERCICE 3 --
+
+Fait.
