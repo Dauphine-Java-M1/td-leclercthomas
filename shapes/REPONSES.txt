@@ -1,8 +1,10 @@
-Exercice 1.
+#################### TD01 ####################
 
-1. Cela fonctionne car nous sommes dans la même classe donc les champs privés sont "visibles" au sein de la même classe.
+-- EXERCICE 1 --
 
-2. Cela ne fonctionne pas car le main tente d'accéder a des champs "private" qui sont extérieurs à sa classe et donc inconnu. Plusieurs solutions s'offrent à nous :
+1. Cela fonctionne, car nous sommes dans la même classe donc les champs privés sont "visibles" au sein de la même classe.
+
+2. Cela ne fonctionne pas, car le main tente d'accéder à des champs "private" qui sont extérieurs à sa classe et donc inconnus. Plusieurs solutions s'offrent à nous :
 	- Passer les champs en "public"
 	- Créer une méthode publique qui renvoie les variables "private"
 
@@ -10,12 +12,74 @@ Exercice 1.
 
 4. Un accesseur est une méthode qui va nous permettre d'accéder aux variables de nos objets en lecture. Typiquement, ce sont les méthodes getNomDeLaVariable(). Elles permettent d'utiliser des variables private dans d'autres classes. Ici, nous devons les utiliser si nous voulons utiliser les variables x et y dans la classe TestPoint.
 
-5.
+5. Fait.
 
-6.
+6. Fait.
 
 7. On peut placer un compteur dans le constructeur.
 
-8. La compilateur regarde parmi les constructeurs si un correspond avec le type passé en paramètre. Si oui il l'utilise, sinon il utilise le constructeur par défault.
+8. La compilateur regarde parmi les constructeurs si un correspond avec le type passé en paramètre. Si oui il l'utilise, sinon il utilise le constructeur par défaut.
 
 9. Fait.
+
+-- EXERCICE 2 --
+
+1. Le code suivant affiche true, false car la comparaison est faite en fonction de l'objet et non des coordonnées.
+
+2. Fait.
+
+3. indexOf() renvoie 0 pour p2, car il se trouve à la position 0 de list
+indexOf() renvoie -1 pour p3, car il ne trouve pas l'objet dans list, en effet p3 n'est pas le même objet que p1 et p2, il partage uniquement les mêmes valeurs x et y.
+On découvre que la méthode indexOf() utilise '==' et 'equals' pour comparer les objets et c'est donc normal que p3 ne soit pas reconnu dans list.
+
+
+-- EXERCICE 3 --
+
+1. Fait.
+
+2. Si on dépasse la capacité du tableau, il y aura une erreur lors de la compilation.
+Dans la méthode add(), il faut gérer la présence de null sur toute la capacité du tableau et afficher un message d'erreur lorsqu’aucune place n'est disponible dans le tableau, c'est-à-dire qu'il n'y a aucun null.
+
+3. Fait.
+
+4. Fait.
+
+5. null en paramètre de la méthode contains renvoie true car le tableau n'est pas complet et il y a donc des cases vides dans le tableau. Si le tableau est complet, la méthode renvoie false.
+Si on fait un add(null), la méthode contains renvoie également true.
+Objects.requireNonNull(o) est une méthode qui permet de vérifier que o n'est pas un objet nulle.
+
+6. Fait.
+
+-- EXERCICE 4 --
+
+1. Fait.
+
+2. Fait.
+
+3. Fait.
+
+4. Fait.
+
+5. Pour c, la valeur du Point a également changé alors qu'on voulait uniquement que la valeur change pour c2.
+Voir nouvelle méthode translate().
+
+6. Pas de problème avec mon code.
+
+7. Fait.
+
+8. Fait.
+
+9. Fait. Oui la méthode doit être statique, car on ne l'appelle pas en faisant Objet.methode().
+
+-- EXERCICE 5 --
+
+1. Fait.
+
+2. Fait.
+
+3. La méthode toString utilisée est celle de la classe mère, c'est à dire la classe Circle donc il n'y a pas la variable concernant le rayon interne.
+Il faut faire un Override de la méthode toString() dans la classe fille Ring.
+
+#################### TD02 ####################
+
+
